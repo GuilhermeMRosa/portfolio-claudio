@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Guilherme Rosa — Portfolio</title>
+  </head>
+  <body>
+    <!-- BOTAO VOLTAR AO TOPO -->
+    <button id="btnTopo" aria-label="Voltar ao topo">&#8679;</button>
+
+    <!-- HEADER -->
+    <header id="header">
+      <nav id="navbar">
+        <div class="nav-logo">GR<span class="dot">.</span></div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#formacao" class="nav-link">Formacao</a>
+          <a href="#certificados" class="nav-link">Certificados</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="section-home">
+        <div class="home-bg-grid"></div>
+        <div class="interface home-interface">
+          <div class="home-content">
+            <div class="home-text">
+              <p class="greeting" id="greetingMsg">Ola!</p>
+              <h1 class="hero-name">
+                Guilherme<br /><span class="accent">De Moraes Rosa</span>
+              </h1>
+              <h2 class="hero-sub">Desenvolvedor em Formacao</h2>
+              <p class="hero-bio">
+                Estudante de Analise e Desenvolvimento de Sistemas na
+                <strong>Fatec Sao Jose dos Campos</strong>. Tenho experiencia
+                com Python, Flask, HTML, CSS, Java e Git, adquirida em projetos
+                academicos reais. Apaixonado por resolver problemas em equipe e
+                com o objetivo de me especializar em
+                <strong>desenvolvimento de jogos</strong>.
+              </p>
+              <div class="home-actions">
+                <a
+                  href="Static/CV___Guilherme_Rosa.pdf"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Baixar CV</a
+                >
+                <a href="#contato" class="btn btn-ghost">Fale comigo</a>
+              </div>
+            </div>
+            <div class="home-img-wrap">
+              <div class="img-frame">
+                <img
+                  src="Static/foto_pessoal.jpg"
+                  alt="Guilherme Rosa"
+                  class="home-photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMACAO -->
+      <section id="formacao" class="section-generic">
+        <div class="interface">
+          <h2 class="section-title">Formacao Academica</h2>
+          <div class="formacao-grid">
+            <div class="formacao-card">
+              <div class="formacao-inst">FATEC Sao Jose dos Campos</div>
+              <div class="formacao-curso">
+                Tecnologo em Analise e Desenvolvimento de Sistemas
+              </div>
+              <div class="formacao-periodo">Fev 2025 - Dez 2027 (cursando)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICADOS -->
+      <section id="certificados" class="section-generic section-dark">
+        <div class="interface">
+          <h2 class="section-title">Cursos e Certificacoes</h2>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <span class="cert-badge">Certificado</span>
+              <div class="cert-nome">Curso Basico de Git</div>
+              <div class="cert-meta">
+                <span class="cert-horas">8h</span>
+                <span class="cert-ano">2025</span>
+              </div>
+              <div class="cert-inst">Cursa / RB tech</div>
+              <a
+                href="Static/Certificado Do GIT.pdf"
+                target="_blank"
+                class="cert-link"
+                >Ver certificado</a
+              >
+            </div>
+
+            <div class="cert-card">
+              <span class="cert-badge">Certificado</span>
+              <div class="cert-nome">Modelagem de Dados</div>
+              <div class="cert-meta">
+                <span class="cert-horas">8h</span>
+                <span class="cert-ano">2025</span>
+              </div>
+              <div class="cert-inst">Fundacao Bradesco</div>
+              <a
+                href="Static/Modelagem de Dados - Fundacao Bradesco.pdf"
+                target="_blank"
+                class="cert-link"
+                >Ver certificado</a
+              >
+            </div>
+
+            <div class="cert-card">
+              <span class="cert-badge">Voluntario</span>
+              <div class="cert-nome">DevFest SJC 2025</div>
+              <div class="cert-meta">
+                <span class="cert-horas">8h</span>
+                <span class="cert-ano">2025</span>
+              </div>
+              <div class="cert-inst">GDG Sao Jose dos Campos</div>
+              <a
+                href="Static/DevFest SJC 2025.pdf"
+                target="_blank"
+                class="cert-link"
+                >Ver certificado</a
+              >
+            </div>
+
+            <div class="cert-card">
+              <span class="cert-badge">Voluntario</span>
+              <div class="cert-nome">CDIO Latin America Meeting 2025</div>
+              <div class="cert-meta">
+                <span class="cert-horas">12h</span>
+                <span class="cert-ano">2025</span>
+              </div>
+              <div class="cert-inst">Fatec SJC</div>
+              <a
+                href="Static/CDIO Latin America Meeting 2025.pdf"
+                target="_blank"
+                class="cert-link"
+                >Ver certificado</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" class="section-generic">
+        <div class="interface">
+          <h2 class="section-title">Projetos</h2>
+          <div class="filter-bar" id="filterBar">
+            <button class="filter-btn active" data-cat="Todos">Todos</button>
+            <button class="filter-btn" data-cat="Web">Web</button>
+            <button class="filter-btn" data-cat="Desktop">Desktop</button>
+          </div>
+          <div class="projetos-grid" id="projetosGrid">
+            <div class="projeto-card" data-cat="Web">
+              <div class="projeto-header">
+                <div class="projeto-nome">SIRAAS</div>
+                <span class="projeto-cat-badge">Web</span>
+              </div>
+              <p class="projeto-desc">
+                Sistema web de gerenciamento de atestados medicos e avaliacao de
+                equipes Scrum. Desenvolvimento das paginas de gestao de
+                atestados para alunos e docentes.
+              </p>
+              <div class="projeto-tags">
+                <span class="projeto-tag">Python</span>
+                <span class="projeto-tag">Flask</span>
+                <span class="projeto-tag">HTML</span>
+                <span class="projeto-tag">CSS</span>
+                <span class="projeto-tag">Scrum</span>
+              </div>
+              <a
+                href="https://github.com/Gabrielle0905/SIRAAS"
+                target="_blank"
+                class="projeto-link"
+                >Ver no GitHub</a
+              >
+            </div>
+
+            <div class="projeto-card" data-cat="Desktop">
+              <div class="projeto-header">
+                <div class="projeto-nome">Sphera</div>
+                <span class="projeto-cat-badge">Desktop</span>
+              </div>
+              <p class="projeto-desc">
+                Aplicacao Java para apoiar empresas na gestao e analise de PDIs
+                (Planos de Desenvolvimento Individual), com relatorios e
+                indicadores para RH.
+              </p>
+              <div class="projeto-tags">
+                <span class="projeto-tag">Java</span>
+                <span class="projeto-tag">JavaFX</span>
+                <span class="projeto-tag">SQL</span>
+                <span class="projeto-tag">MySQL</span>
+                <span class="projeto-tag">Scrum</span>
+              </div>
+              <a
+                href="https://github.com/Minerva2025/Minerva"
+                target="_blank"
+                class="projeto-link"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section-generic section-dark">
+        <div class="interface">
+          <h2 class="section-title">Habilidades</h2>
+          <div class="skills-wrap">
+            <div class="skills-bloco">
+              <h3 class="skills-cat">Hard Skills</h3>
+              <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Scrum</span>
+              </div>
+            </div>
+
+            <div class="skills-bloco">
+              <h3 class="skills-cat">Soft Skills</h3>
+              <div class="skills-grid">
+                <span class="skill-tag">Trabalho em equipe</span>
+                <span class="skill-tag">Proatividade</span>
+                <span class="skill-tag">Organizacao</span>
+                <span class="skill-tag">Pensamento Analitico</span>
+                <span class="skill-tag">Resolucao de problemas</span>
+                <span class="skill-tag">Comunicacao</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="section-generic">
+        <div class="interface">
+          <h2 class="section-title">Contato</h2>
+          <div class="contato-simples">
+            <a
+              href="mailto:guilhermedemoraesrosa@gmail.com"
+              class="contato-item"
+            >
+              guilhermedemoraesrosa@gmail.com
+            </a>
+
+            <div class="social-row">
+              <a
+                href="https://github.com/GuilhermeMRosa"
+                target="_blank"
+                class="social-btn"
+                aria-label="GitHub"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/guilherme-rosa-518047387/"
+                target="_blank"
+                class="social-btn"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/guilherme.rozza/"
+                target="_blank"
+                class="social-btn"
+                aria-label="Instagram"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner interface">
+        <p class="footer-copy">2026 Guilherme De Moraes Rosa</p>
+        <p class="footer-made">Feito com HTML, CSS e JS</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
