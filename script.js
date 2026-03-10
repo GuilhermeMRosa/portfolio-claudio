@@ -1,6 +1,4 @@
-/* ============================================
-   SAUDACAO POR HORARIO (decisao)
-   ============================================ */
+
 function getSaudacao() {
   var hora = new Date().getHours();
   var saudacao;
@@ -17,9 +15,6 @@ function getSaudacao() {
   if (el) el.textContent = saudacao;
 }
 
-/* ============================================
-   FILTRO DE PROJETOS (decisao + repeticao)
-   ============================================ */
 function configurarFiltros() {
   var botoes = document.querySelectorAll(".filter-btn");
   var cards  = document.querySelectorAll(".projeto-card");
@@ -27,14 +22,12 @@ function configurarFiltros() {
   for (var i = 0; i < botoes.length; i++) {
     botoes[i].addEventListener("click", function () {
       var cat = this.dataset.cat;
-
-      // Remove active de todos os botoes
+      
       for (var j = 0; j < botoes.length; j++) {
         botoes[j].classList.remove("active");
       }
       this.classList.add("active");
 
-      // Mostra ou oculta os cards
       for (var k = 0; k < cards.length; k++) {
         if (cat === "Todos" || cards[k].dataset.cat === cat) {
           cards[k].classList.remove("hidden");
@@ -46,9 +39,6 @@ function configurarFiltros() {
   }
 }
 
-/* ============================================
-   HAMBURGER MENU (funcao)
-   ============================================ */
 function configurarHamburger() {
   var btn   = document.getElementById("hamburger");
   var links = document.getElementById("navLinks");
@@ -66,9 +56,7 @@ function configurarHamburger() {
   }
 }
 
-/* ============================================
-   BOTAO VOLTAR AO TOPO (funcao)
-   ============================================ */
+
 function configurarBtnTopo() {
   var btn = document.getElementById("btnTopo");
   if (!btn) return;
@@ -86,9 +74,6 @@ function configurarBtnTopo() {
   });
 }
 
-/* ============================================
-   NAV ATIVO AO SCROLLAR (repeticao)
-   ============================================ */
 function configurarNavAtivo() {
   var secoes   = document.querySelectorAll("section[id]");
   var navLinks = document.querySelectorAll(".nav-link");
@@ -111,9 +96,6 @@ function configurarNavAtivo() {
   });
 }
 
-/* ============================================
-   INICIALIZACAO
-   ============================================ */
 document.addEventListener("DOMContentLoaded", function () {
   getSaudacao();
   configurarFiltros();
